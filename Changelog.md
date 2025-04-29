@@ -1,4 +1,18 @@
-# Changelog
+﻿# Changelog
+
+## 3. mssql connect
+
+### How to
+
+- AppHost um DB erweitern. Erst Server, dann DB --> Aspire Hosting-Pakete
+- [https://learn.microsoft.com/en-us/dotnet/aspire/database/ef-core-migrations](Für Migrations wie die Profis)
+
+### Was ist neu?
+
+- Name der Datenbank bleibt wie bisher, deshalb ist der ConnectionString automatisch verfügbar
+- Zugangsdaten sind geklärt und automatisch generiert, also auch lokale Sicherheit und nichts geheimes zu commiten
+- einfaches F5 startet das ganze Projekt mit allen Abhängigkeiten
+- 
 
 ## 2. Aspire init
 

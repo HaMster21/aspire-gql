@@ -1,10 +1,10 @@
-
-using Microsoft.EntityFrameworkCore;
-
-namespace AspireDemo.Types;
+﻿namespace AspireDemo.Types;
 
 [QueryType]
-public class Query(BookService bookService)
+public class Query
 {
-    public IQueryable<Book> GetBooks() => bookService.GetBooks().Select(b => new Book(b.Title, new Author(b.Author.Name)));
+    public IQueryable<Book> GetBooks(BookService bookService)
+        => bookService
+            .GetBooks()
+            .Select(b => new Book(b.Title, new Author(b.Author.Name)));
 }

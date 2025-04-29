@@ -1,9 +1,13 @@
 ﻿var builder = DistributedApplication.CreateBuilder(args);
 
-var dbConnection = builder.AddConnectionString("BookstoreDb");
+var dbService = builder
+    .AddSqlServer("sql");
+
+var bookstoreDb = dbService
+    .AddDatabase("BookstoreDb");
 
 var api = builder
     .AddProject<Projects.AspireDemo>("aspiredemo")
-    .WithReference(dbConnection);
+    .WithReference(bookstoreDb);
 
 builder.Build().Run();
