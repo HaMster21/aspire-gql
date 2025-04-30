@@ -2,8 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemo", "src\AspireDemo\AspireDemo.csproj", "{2591F7C8-47EB-9AF1-047F-70B20C8D1714}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspire", "aspire", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.AppHost", "src\aspire\Demo.AppHost\Demo.AppHost.csproj", "{DA332393-D2AF-C629-C7E6-A49119411B41}"
@@ -14,16 +12,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reipsAomeD", "src\reipsAome
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Gateway", "Demo.Gateway\Demo.Gateway.csproj", "{1CE5E535-A86C-4F92-9519-2CA2E5FCB01C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireDemo", "src\AspireDemo\AspireDemo.csproj", "{2591F7C8-47EB-9AF1-047F-70B20C8D1714}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2591F7C8-47EB-9AF1-047F-70B20C8D1714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2591F7C8-47EB-9AF1-047F-70B20C8D1714}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2591F7C8-47EB-9AF1-047F-70B20C8D1714}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2591F7C8-47EB-9AF1-047F-70B20C8D1714}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DA332393-D2AF-C629-C7E6-A49119411B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DA332393-D2AF-C629-C7E6-A49119411B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA332393-D2AF-C629-C7E6-A49119411B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -40,6 +36,10 @@ Global
 		{1CE5E535-A86C-4F92-9519-2CA2E5FCB01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CE5E535-A86C-4F92-9519-2CA2E5FCB01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CE5E535-A86C-4F92-9519-2CA2E5FCB01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2591F7C8-47EB-9AF1-047F-70B20C8D1714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2591F7C8-47EB-9AF1-047F-70B20C8D1714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2591F7C8-47EB-9AF1-047F-70B20C8D1714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2591F7C8-47EB-9AF1-047F-70B20C8D1714}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
