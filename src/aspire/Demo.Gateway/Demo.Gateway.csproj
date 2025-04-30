@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\aspire\Demo.ServiceDefaults\Demo.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\Demo.ServiceDefaults\Demo.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

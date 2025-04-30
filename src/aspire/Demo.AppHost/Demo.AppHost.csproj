@@ -18,9 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Demo.Gateway\Demo.Gateway.csproj" />
     <ProjectReference Include="..\..\AspireDemo\AspireDemo.csproj" />
     <ProjectReference Include="..\..\reipsAomeD\reipsAomeD.csproj" />
+    <ProjectReference Include="..\Demo.Gateway\Demo.Gateway.csproj" />
   </ItemGroup>
 
 </Project>
