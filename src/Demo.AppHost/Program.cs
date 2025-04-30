@@ -8,6 +8,7 @@ var bookstoreDb = dbService
 
 var api = builder
     .AddProject<Projects.AspireDemo>("aspiredemo")
-    .WithReference(bookstoreDb);
+    .WithReference(bookstoreDb)
+    .WaitFor(bookstoreDb);
 
 builder.Build().Run();

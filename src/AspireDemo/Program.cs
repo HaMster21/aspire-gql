@@ -5,10 +5,32 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddServiceDefaults();
 
 var connectionString = builder.Configuration.GetConnectionString("BookstoreDb");
-builder.Services.AddDbContextFactory<BookstoreContext>(dbContextOptionsBuilder => dbContextOptionsBuilder.UseSqlServer(connectionString, options =>
-{
-    options.EnableRetryOnFailure(5);
-}));
+builder.Services.AddDbContextFactory<BookstoreContext>(dbContextOptionsBuilder =>
+    dbContextOptionsBuilder.UseSqlServer(connectionString, options =>
+    {
+        options.EnableRetryOnFailure(5);
+    }).UseSeeding((context, _) =>
+    {
+        var johnskeet = context.Set<Author>().FirstOrDefault(a => a.Name == "Jon Skeet");
+        if (johnskeet == null)
+        {
+            var entry = context.Set<Author>().Add(new Author() { Name = "Jon Skeet" });
+            context.SaveChanges();
+            johnskeet = entry.Entity;
+        }
+
+        var book = context.Set<Book>().FirstOrDefault(b => b.Title == "C# in a Nutshell");
+        if (book == null)
+        {
+            context.Set<Book>().Add(new Book()
+            {
+                Title = "C# in a Nutshell",
+                Author = johnskeet
+            });
+            context.SaveChanges();
+        }
+    })
+    );
 builder.EnrichSqlServerDbContext<BookstoreContext>();
 
 builder.Services.AddScoped<BookService>();

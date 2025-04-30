@@ -12,7 +12,7 @@
 - Name der Datenbank bleibt wie bisher, deshalb ist der ConnectionString automatisch verfügbar
 - Zugangsdaten sind geklärt und automatisch generiert, also auch lokale Sicherheit und nichts geheimes zu commiten
 - einfaches F5 startet das ganze Projekt mit allen Abhängigkeiten
-- 
+- Es kann auf Ressourcen gewartet werden, die Startreihenfolge ist klar
 
 ## 2. Aspire init
 
@@ -55,3 +55,4 @@ Wir bauen als Grundlage einen kleinen Service mit GraphQl-API
 - wie kann ich automatisch eine Datenbank mit meiner Anwendung bereitstellen?
 - wie verfolge ich Abläufe und Logs der Anwendung und der Datenbank?
 - vertrauliche Zugangsdaten?
+- wie kann ich meine Anwendung starten sobald die Datenbank live ist?
