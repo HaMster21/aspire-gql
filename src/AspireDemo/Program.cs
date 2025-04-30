@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 
-var connectionString = builder.Configuration.GetConnectionString("BookstoreDb");
+var connectionString = builder.Configuration.GetConnectionString("BookstoreDb") ?? "";
 builder.Services.AddDbContextFactory<BookstoreContext>(dbContextOptionsBuilder =>
     dbContextOptionsBuilder.UseSqlServer(connectionString, options =>
     {

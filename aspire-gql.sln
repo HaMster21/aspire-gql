@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.ServiceDefaults", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reipsAomeD", "src\reipsAomeD\reipsAomeD.csproj", "{47D55411-E260-AAA5-AF88-CB21E0F0AB0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Gateway", "Demo.Gateway\Demo.Gateway.csproj", "{1CE5E535-A86C-4F92-9519-2CA2E5FCB01C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{47D55411-E260-AAA5-AF88-CB21E0F0AB0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47D55411-E260-AAA5-AF88-CB21E0F0AB0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47D55411-E260-AAA5-AF88-CB21E0F0AB0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CE5E535-A86C-4F92-9519-2CA2E5FCB01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CE5E535-A86C-4F92-9519-2CA2E5FCB01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CE5E535-A86C-4F92-9519-2CA2E5FCB01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CE5E535-A86C-4F92-9519-2CA2E5FCB01C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DA332393-D2AF-C629-C7E6-A49119411B41} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{0702E82B-47AF-4F54-F793-CD6479C76550} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{1CE5E535-A86C-4F92-9519-2CA2E5FCB01C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {84B1AE47-47E7-4CF2-9A5E-4E103A98F253}

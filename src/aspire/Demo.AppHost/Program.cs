@@ -19,4 +19,8 @@ var libraries = builder
     .WithReference(libraryDb)
     .WaitFor(libraryDb);
 
-builder.Build().Run();
+var gateway = builder.AddFusionGateway<Projects.Demo_Gateway>("gateway")
+    .WithSubgraph(books)
+    .WithSubgraph(libraries);
+
+builder.Build().Compose().Run();

@@ -4,7 +4,7 @@ using reipsAomeD.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("LibraryDb");
+var connectionString = builder.Configuration.GetConnectionString("LibraryDb") ?? "";
 builder.Services.AddDbContextFactory<LibraryContext>(dbContextOptionsBuilder =>
     dbContextOptionsBuilder.UseSqlServer(connectionString, options =>
     {
